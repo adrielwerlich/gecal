@@ -1,0 +1,40 @@
+{% extends "base_generic.html" %}
+{% load staticfiles %}
+
+{% block title %}<title>Title Override in Index Template. Defined in index.html</title>{% endblock %}
+
+{% block content %}
+	<h1>Local Library Home</h1>
+	<p>Welcome to LocalLibrary, a website developed by <em>MDN</em>! Index.html </p>
+	
+	<h2>Dynamic Content</h2>
+	<p>The library has the following record counts:</p>
+	<ul>
+		<li><strong>Books: </strong> {{numBooks}}</li>
+		<li><strong>Copies: </strong>{{numInstances}}</li>
+		<li><strong>Copies Available: </strong>{{numInstancesAvailable}}</li>
+		<li><strong>Authors: </strong>{{numAuthors}}</li>
+		<li><strong>Number of titles that contain 'bok': </strong>{{filterBok}}</li>
+		<li><strong>Number of genre names that contain 'fiction'. CaseInsensitive: </strong>{{counterGenreCaseInsensitive}}</li>
+		<li><strong>Books List: </strong>{{ booksList }}</li>
+		<li><strong>Keys: </strong>{{ keys }}</li>
+	</ul>
+	
+	<p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif%}.</p>
+	
+	
+	{% if booksList %}
+		<h2>List of Books</h2>
+		<p>Detail View For Books</p>
+	
+		<ul>
+<!-- 			{% csrf_token %} -->
+			{% for book in booksList %}
+				<li><strong>Book Title: </strong>{{ book }}</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+			<p>No polls are available.</p>
+	{% endif %}
+	
+{% endblock %}

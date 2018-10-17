@@ -1,0 +1,338 @@
+<html>
+
+<head>
+<title>Grupo de Pesquisa Gecal</title>
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% load staticfiles %}
+<!-- 	<link rel="stylesheet" href="{% static 'bootstrap_css/bootstrap.min.css' %}" type="text/css" /> -->
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+
+<style>
+.jumbotron {
+	background-color: #2E2D88;
+	color: white;
+}
+</style>
+</head>
+
+<body class="body" style="background-color: #f6f6f6">
+
+	<section class="header-site">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="text-center"> Titulo 1 Exemplo </h1>
+					<p class="lead text-center"> html tag paragrafo class tipo lead text-center</p>
+					<p class="text-center"><a href="#" class="btn btn-danger"> button danger class</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="content-site">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="text-center"> titulo 1 text center align </h1>
+
+					<p class="text-center"> paragrafo text center align
+					paragrafo text center align
+					paragrafo text center align </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="">
+						<div class="caption text-center">
+							<h3> titulo 3 text center class</h3>
+							<p> paragrafo dentro do t 3 paragrafo dentro do t 3
+							paragrafo dentro do t 3paragrafo dentro do t 3
+							paragrafo dentro do t 3paragrafo dentro do t 3</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="">
+						<div class="caption text-center">
+							<h3> titulo 3 text center class</h3>
+							<p> paragrafo dentro do t 3 paragrafo dentro do t 3
+							paragrafo dentro do t 3paragrafo dentro do t 3
+							paragrafo dentro do t 3paragrafo dentro do t 3</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="">
+						<div class="caption text-center">
+							<h3> titulo 3 text center class</h3>
+							<p> paragrafo dentro do t 3 paragrafo dentro do t 3
+							paragrafo dentro do t 3paragrafo dentro do t 3
+							paragrafo dentro do t 3paragrafo dentro do t 3</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="img-site">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="text-center">
+						Seção 1.10.32 de "de Finibus Bonorum et Malorum", escrita por Cícero em 45 AC
+					</h1>
+					<p class="lead text-center">
+						"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+						quae ab illo inventore veritatis et quasi architecto beatae vitae
+						dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+						aspernatur aut odit aut fugit,
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="fotter-site">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-center">consectetur, adipisci velit,
+						sed quia non numquam eius modi tempora incidunt
+						ut labore et dolore magnam aliquam quaerat voluptatem.
+						Ut enim ad minima veniam, quis nostrum exercitationem
+						ullam corporis suscipit laboriosam, nisi ut aliquid ex
+						ea commodi consequatur?</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavBar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"> <img
+					src="{% static 'imagens/logo_gecal.jpg' %}" class="responsive-img"
+					style='max-height: 20px;' alt="face" />
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavBar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#"> Projetos <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Projetos de Pesquisa </a></li>
+							<li><a href="#"> Projetos de Extensão </a></li>
+						</ul></li>
+					<li><a href="#">Pesquisadores</a></li>
+					<li><a href="#">Bolsistas</a></li>
+					<li><a href="#">Galerias</a></li>
+					<!-- 					<li><a href=" url 'paginasGecal:formulario_denuncia' ">Denúncias</a></li> -->
+					<li><a href="{% url 'paginasGecal:qualquerNome' %}">Outro
+							Formulário</a></li>
+					<!-- 					<li><a href=" url 'app_teste:ind_app_teste' ">App_teste</a></li> -->
+					<li><a href="{% url 'denunciar:indice_denunciar' %}">Denunciar</a></li>
+					<!-- 					<li><a href=" url 'denuncias' ">Denúncias</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="jumbotron">
+			<p>
+				Gênero, Educação e Cidadania na América Latina: aproximações e
+				desafios (GECAL) <br> Líder: Mareli Eliane Graupe – UNIPLAC <br>
+				Vice-Líder: Josilaine Antunes Pereira
+			</p>
+
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h4>HISTÓRICO</h4>
+				O grupo de pesquisa foi criado no ano de 2013. Reúne
+				pesquisadoras/es de diferentes países e Instituições de Ensino
+				Superior na América do Sul em torno das temáticas Educação, Estudos
+				de Gênero e Cidadania. Esse grupo possui como finalidade aumentar o
+				impacto de suas pesquisas e com isso maior repercussão local,
+				nacional e internacional atendendo as demandas de nossa sociedade.
+				Com a realização de pesquisas busca-se articular o tripé Pesquisa,
+				Ensino e Extensão na perspectiva da construção de uma universidade
+				comprometida com a qualidade na formação de pesquisadoras/es e com a
+				luta de enfrentamento de injustiças sociais.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<br> <br> O GECAL apresenta um caráter inter e
+				transdisciplinar, proporcionando aos integrantes das linhas de
+				pesquisa a capacidade de gerar conhecimentos de fronteira, com
+				destaque a temas relevantes da atualidade, que permitam associar
+				pesquisador@s com diferentes competências em propostas bem definidas
+				e focadas, e levando em conta as atividades científicas que podem
+				ser geradas como fruto dessa associação: publicações em revistas
+				científicas, livros, formação de novas equipes, de recursos humanos
+				nas próprias instituições envolvidas e geração de conhecimentos
+				fundamentais para políticas públicas no campo da educação.
+			</div>
+			<!-- 			<div class="clearfix visible-sm"></div> -->
+
+		</div>
+		<br> <br> <br>
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#em_andamento">Projetos
+							Em Andamento</a></li>
+
+					<li><a data-toggle="tab" href="#concluidos">Projetos
+							Concluídos</a></li>
+				</ul>
+
+				<div id="em_andamento" class="tab-pane fade in active">
+
+					<!-- 					<div class="col-md-6"> -->
+					<div class="tab-content">
+						<h4>
+							<a href="#proj1Conteudo" data-toggle="collapse"> 1.1.1
+								Gênero, diversidade e sexualidade no campo da educação</a>
+						</h4>
+						<div id="proj1Conteudo" class="collapse">
+							<strong>Ementa:</strong>Os estudos sobre gênero, diversidade e
+							sexualidade têm se revelado uma área de pesquisa profícua no
+							campo das Ciências Humanas. Os conceitos de diversidade e
+							sexualidade analisados juntamente com a construção das
+							identidades, numa perspectiva relacional de gênero tornam-se
+							importantes instrumentos epistemológicos, necessário para se
+							compreender e discutir possíveis transformações na educação.
+							Sabemos que os currículos, procedimentos de ensino, as normas,
+							teorias, a linguagem, os materiais didáticos e processos de
+							avaliação são o lócus da construção das desigualdades de gênero,
+							sexualidade, raça, etnia e classe no contexto escolar. Além
+							disso, objetiva-se discutir não apenas o que é ensinado na
+							escola, mas o modo como é ensinado, problematizando também as
+							teorias que orientam o trabalho do profissional da educação e
+							atentos, sobretudo, para a linguagem, procurando perceber o
+							sexismo, o racismo, o etnocentrismo, a homofobia que ela muitas
+							vezes carrega e institui.
+							<a href=" url app_name:page_name.html "> + info </a>
+						</div>
+					</div>
+					<!-- 					</div> -->
+					<!-- 					<div class="col-md-6"> -->
+					<div class="tab-content">
+						<h4>
+							<a href="#proj2Conteudo" data-toggle="collapse"
+								default="collapsed"> 1.1.2 Estudos epistemológicos em
+								politica públicas: gênero e educação</a>
+						</h4>
+						<div id="proj2Conteudo" class="collapse">
+							<strong>Ementa:</strong>Esta linha objetiva analisar e discutir
+							as políticas públicas de gênero no campo da educação
+							implementadas em países do continente da América Latina no final
+							do século XX e inicio do século XXI. As políticas públicas para
+							as mulheres ocupam as agendas governamentais na América Latina em
+							contextos de reformas neoliberais e de globalização da economia
+							dos anos 1990. Contextos também demarcados por processos de
+							redemocratização política e pela intensificação dos investimentos
+							feministas na busca pela equidade entre homens e mulheres.
+							Investigaremos a relevância da ação política protagonizada pelas
+							mulheres e/ou para mulheres enquanto possibilidade de intervenção
+							cidadã e de transformação do espaço público brasileiro e Latino
+							Americano. Também, analisaremos políticas de gênero voltadas para
+							áreas específicas, tais como saúde, renda, trabalho e violências.
+							<a href=" url app_name:page_name.html "> + info </a>
+						</div>
+					</div>
+					<!-- 					</div> -->
+					<div class="tab-content">
+						<h4>
+							<a href="#proj3Conteudo" data-toggle="collapse"
+								default="collapsed"> 1.1.3 POLÍTICAS PÚBLICAS DE GÊNERO: UMA
+								ANÁLISE DOS CURRÍCULOS DE GRADUAÇÃO E PÓS-GRADUAÇÃO NO ESTADO DE
+								SANTA CATARINA(o título estava assim. Deve ficar assim, ou
+								seguir o padrão anterior?)</a>
+						</h4>
+						<div id="proj3Conteudo" class="collapse">
+							<strong>Ementa:</strong>Esta pesquisa possui como objetivo
+							identificar se as temáticas de gênero e sexualidades estão
+							contempladas nos Programas de Pós-Graduação em Educação e
+							Graduação no Estado de Santa Catarina. É um estudo qualitativo em
+							que será empregado o método de análise documental. Esta pesquisa
+							possui como aporte teórico-metodológico autores/as que escrevem
+							sobre gênero, sexualidades, políticas públicas de gênero,
+							formação de professoras/es, buscando compreender os impactos e as
+							contribuições da inserção dessas temáticas na estrutura
+							curricular na perspectiva da construção de uma educação justa e
+							igualitária para todas/os. Na Conferência Nacional da Educação
+							Básica (CONEB) ocorrida em 2008, foi aprovada a incorporação dos
+							estudos de gênero e diversidade nos currículos das licenciaturas,
+							configurando-se como um passo fundamental para a concretização da
+							inclusão dessas temáticas nas IES. Considerando a existência de
+							políticas públicas de gênero e que a implementação dessas na
+							estrutura curricular dos cursos de licenciatura e pós-graduação
+							pode contribuir no enfrentamento de violências de gênero,
+							preconceitos e discriminação no campo da educação, justifica-se a
+							importância de mapear quais são as IES que oferecem disciplinas
+							sobre estas temática em seus Programas de Pós-Graduação em
+							Educação e em seus Cursos de Licenciatura e identificar o perfil
+							destes cursos. <em>Palavras-chave: Políticas públicas de gênero,
+							Sexualidades, Instituições de Ensino Superior, Currículo.</em>
+							<a href="{% url 'paginasGecal:proj3Conteudo' %}"> + info </a>
+						</div>
+
+
+					</div>
+					<div id="concluidos" class="tab-pane fade">
+						<div class="col-md-6">
+							<div class="tab-content">
+								<h3>
+									<a href="#"> PROJETO INTERINSTITUCIONAL ANTROPOLOGIA,
+										GÊNERO E EDUCAÇÃO EM SANTA CATARINA 2013-2015</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<br> <br> <br> {% block content %} {% endblock %}
+			<!-- 	</div> -->
+</body>
+
+<footer>
+	<div class="container-fluid" style="margin-left: 15px">
+		<p>
+			<a
+				href="https://www.facebook.com/Gecal-Grupo-de-Pesquisa-em-G%C3%AAnero-Educa%C3%A7%C3%A3o-e-Cidadania-na-Am%C3%A9rica-Latina-1789206161123983/"
+				target="blank">Facebook</a> | <a href="http://dgp.cnpq.br/dgp/espelhogrupo/0019510862452049" target="blank">CNPq</a>
+		</p>
+	</div>
+</footer>
+
+</html>
+
+</html>

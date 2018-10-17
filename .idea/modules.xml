@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Gecal.iml" filepath="$PROJECT_DIR$/.idea/Gecal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bootstrap_tutorial/.idea/bootstrap_tutorial.iml" filepath="$PROJECT_DIR$/../bootstrap_tutorial/.idea/bootstrap_tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../locallibrary/.idea/locallibrary.iml" filepath="$PROJECT_DIR$/../locallibrary/.idea/locallibrary.iml" />
+      <module fileurl="file://F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/.idea/p5js-tutorial.iml" filepath="F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/.idea/p5js-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../portfolio_project/.idea/portfolio_project.iml" filepath="$PROJECT_DIR$/../portfolio_project/.idea/portfolio_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../producthunt-project-master/.idea/producthunt-project-master.iml" filepath="$PROJECT_DIR$/../producthunt-project-master/.idea/producthunt-project-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sayHiDjProj/.idea/sayHiDjProj.iml" filepath="$PROJECT_DIR$/../sayHiDjProj/.idea/sayHiDjProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../word_count_project/.idea/word_count_project.iml" filepath="$PROJECT_DIR$/../word_count_project/.idea/word_count_project.iml" />
+    </modules>
+  </component>
+</project>

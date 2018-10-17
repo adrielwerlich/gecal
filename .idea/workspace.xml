@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1be029e4-4654-4fa4-9e50-00b30e777283" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/.idea/portfolio_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/.idea/portfolio_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/blog/templates/postDetailPerId.html" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/blog/templates/postDetailPerId.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/blog/templates/show_blog_posts_homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/blog/templates/show_blog_posts_homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio_project/jobs/templates/jobs_home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio_project/jobs/templates/jobs_home_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/.idea/producthunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/.idea/producthunt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/producthunt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/producthunt/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/producthunt/templates/base_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/producthunt/templates/base_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/producthunt/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/producthunt/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/products/templates/productsHomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/products/templates/productsHomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../producthunt-project/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../producthunt-project/products/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="282819741">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.109" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.81" value="1" />
+          <entry key="project.open.time.84" value="2" />
+          <entry key="project.open.time.94" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="2" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="33" />
+          <entry key="py" value="68" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="939" />
+          <entry key="HTML" value="4548" />
+          <entry key="PLAIN_TEXT" value="289" />
+          <entry key="Python" value="4925" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="33" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="939" />
+          <entry key="gitignore" value="237" />
+          <entry key="html" value="4548" />
+          <entry key="py" value="4925" />
+          <entry key="txt" value="52" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="575551746">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="2" />
+          <entry key="html" value="28" />
+          <entry key="js" value="1" />
+          <entry key="png" value="1" />
+          <entry key="py" value="26" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="28" />
+          <entry key="Image" value="1" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="2565" />
+          <entry key="JavaScript" value="173" />
+          <entry key="PLAIN_TEXT" value="181" />
+          <entry key="Python" value="1599" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="2565" />
+          <entry key="js" value="173" />
+          <entry key="py" value="1599" />
+          <entry key="txt" value="181" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+    <session id="697114564">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="26" />
+          <entry key="HTML" value="602" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="111" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="26" />
+          <entry key="html" value="602" />
+          <entry key="py" value="112" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="4" />
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5275298">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/paginasGecal/templates/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="181" column="34" selection-start-line="181" selection-start-column="34" selection-end-line="181" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/paginasGecal/templates/paginasGecal/menulateral.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/paginasGecal/static/css/estilos.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/paginasGecal/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Gecal/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1428">
+                  <caret line="84" selection-start-line="84" selection-end-line="84" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Gecal/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/paginasGecal/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/paginasGecal/templates/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>estrutura</find>
+      <find>seção</find>
+      <find>o programa</find>
+      <find>block</find>
+      <find>o program</find>
+      <find>jumbo</find>
+      <find>off</find>
+      <find>o progra</find>
+      <find>col-lg-12 col-md-12 col-sm-12 col-xs-12</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>col-lg-8 col-md-8 col-sm-8 col-xs-8</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../portfolio_project" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial/tutorial.py" />
+        <option value="$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial/urls.py" />
+        <option value="$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial/templates/image_gallery.html" />
+        <option value="$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial/static/css/customStyles.css" />
+        <option value="$PROJECT_DIR$/../word_count_project/word_count_project/settings.py" />
+        <option value="$PROJECT_DIR$/../word_count_project/word_count_project/templates/make_show_count.html" />
+        <option value="$PROJECT_DIR$/../word_count_project/word_count_project/templates/myHomePage.html" />
+        <option value="$PROJECT_DIR$/../word_count_project/word_count_project/urls.py" />
+        <option value="$PROJECT_DIR$/../word_count_project/word_count_project/views.py" />
+        <option value="$PROJECT_DIR$/../word_count_project/word_count_project/templates/about.html" />
+        <option value="$PROJECT_DIR$/../portfolio_project/portfolio_project/portfolio.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/jobs/models.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/jobs/admin.py" />
+        <option value="$PROJECT_DIR$/paginasGecal/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/../portfolio_project/blog/admin.py" />
+        <option value="$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial/templates/bootstrap_tutorial.html" />
+        <option value="$PROJECT_DIR$/../portfolio_project/jobs/views.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/jobs/urls.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/blog/views.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/portfolio_project/settings.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/portfolio_project/.gitignore" />
+        <option value="$PROJECT_DIR$/../portfolio_project/blog/models.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/portfolio_project/urls.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/blog/urls.py" />
+        <option value="$PROJECT_DIR$/../portfolio_project/blog/templates/postDetailPerId.html" />
+        <option value="$PROJECT_DIR$/../portfolio_project/jobs/templates/jobs_home_page.html" />
+        <option value="$PROJECT_DIR$/../portfolio_project/portfolio_project/using-ssh-to-access-dataoceanserver.txt" />
+        <option value="$PROJECT_DIR$/../locallibrary/catalog/models.py" />
+        <option value="$PROJECT_DIR$/../locallibrary/catalog/templates/catalog/book_detail.html" />
+        <option value="$PROJECT_DIR$/../locallibrary/catalog/urls.py" />
+        <option value="$PROJECT_DIR$/../locallibrary/catalog/templates/base_generic.html" />
+        <option value="$PROJECT_DIR$/../portfolio_project/blog/templates/show_blog_posts_homePage.html" />
+        <option value="$PROJECT_DIR$/../portfolio_project/portfolio_project/templates/base_template.html" />
+        <option value="$PROJECT_DIR$/paginasGecal/templates/exemplos_site_uniplac/mestrado_educacao.html" />
+        <option value="$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial2/templates/varios_modelos.html" />
+        <option value="$PROJECT_DIR$/Gecal/settings.py" />
+        <option value="$PROJECT_DIR$/paginasGecal/urls.py" />
+        <option value="$PROJECT_DIR$/paginasGecal/admin.py" />
+        <option value="F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/coding_challenge-500k_subscribers/sketch.js" />
+        <option value="$PROJECT_DIR$/paginasGecal/templates/modelo_base_uniplac.html" />
+        <option value="$PROJECT_DIR$/anotações.txt" />
+        <option value="$PROJECT_DIR$/paginasGecal/models.py" />
+        <option value="$PROJECT_DIR$/paginasGecal/views.py" />
+        <option value="$PROJECT_DIR$/Gecal/urls.py" />
+        <option value="$PROJECT_DIR$/paginasGecal/static/css/estilos.css" />
+        <option value="$PROJECT_DIR$/paginasGecal/templates/paginasGecal/menulateral.html" />
+        <option value="$PROJECT_DIR$/paginasGecal/templates/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/../producthunt-project-master/producthunt/static/open-iconic/package.json" />
+      <path value="F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/coding_challenge-500k_subscribers/node_modules/manager/package.json" />
+      <path value="F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/coding_challenge-500k_subscribers/node_modules/p5/package.json" />
+      <path value="F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/coding_challenge-500k_subscribers/node_modules/uglify-js/package.json" />
+      <path value="F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/coding_challenge-500k_subscribers/node_modules/uglifycss/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="11" />
+    <option name="width" value="1318" />
+    <option name="height" value="398" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Gecal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gecal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gecal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gecal" type="462c0819:PsiDirectoryNode" />
+              <item name="paginasGecal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gecal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gecal" type="462c0819:PsiDirectoryNode" />
+              <item name="paginasGecal" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gecal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gecal" type="462c0819:PsiDirectoryNode" />
+              <item name="paginasGecal" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gecal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gecal" type="462c0819:PsiDirectoryNode" />
+              <item name="paginasGecal" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\adriel\projetos\Gecal\paginasGecal\templates\backup" />
+      <recent name="D:\backup\eclipse-workspace\ec_photon\portfolio_project\portfolio_project\static" />
+      <recent name="D:\backup\eclipse-workspace\ec_photon\Gecal\paginasGecal\templates\backup_18_8" />
+      <recent name="D:\backup\eclipse-workspace\ec_photon\bootstrap_tutorial\bootstrap_tutorial\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\backup\eclipse-workspace\ec_photon\portfolio_project\portfolio_project\templates" />
+      <recent name="D:\backup\eclipse-workspace\ec_photon\portfolio_project\blog\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1be029e4-4654-4fa4-9e50-00b30e777283" name="Default Changelist" comment="" />
+      <created>1535005391523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535005391523</updated>
+      <workItem from="1538157152608" duration="7342000" />
+      <workItem from="1538354533513" duration="186000" />
+      <workItem from="1538871862866" duration="393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7921000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2872024" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.6235119" visible="true" weight="0.19639935" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3764881" side_tool="true" weight="0.20491803" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="286" height="305" id="Documentation" order="3" side_tool="true" weight="0.3290469" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2872024" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6235119" visible="true" weight="0.14238952" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3764881" side_tool="true" weight="0.20491803" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="286" height="305" id="Documentation" order="3" side_tool="true" weight="0.3290469" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/backup/base_generic.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/paginasGecal/proj3Conteudo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/exemplos_site_uniplac/index_uniplac.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/exemplos_site_uniplac/mestrado_educacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="292" column="6" lean-forward="true" selection-start-line="186" selection-end-line="292" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/paginasGecal/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/static/css/estilo_menu_lateral.css" />
+    <entry file="file://$PROJECT_DIR$/paginasGecal/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="181" column="1" lean-forward="true" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial2/templates/varios_modelos.html" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial2/templates/bootstrap_tutorial.html" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap_tutorial/bootstrap_tutorial/templates/bootstrap_tutorial.html" />
+    <entry file="file://$PROJECT_DIR$/../locallibrary/templates/registration/login.html" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/producthunt/static/logo_letter-p.png" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/producthunt/templates/base_template.html" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/producthunt/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/products/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../word_count_project/word_count_project/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../word_count_project/manage.py" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/products/models.py" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/producthunt/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/products/admin.py" />
+    <entry file="file://$PROJECT_DIR$/paginasGecal/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../word_count_project/word_count_project/views.py" />
+    <entry file="file://F:/projetos/the-coding-train-java-script-p5js/java-script/p5js-tutorial/coding_challenge-500k_subscribers/sketch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../locallibrary/catalog/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/products/views.py" />
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/modelo_base_uniplac.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6783">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/shortcuts.py" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/accounts/views.py" />
+    <entry file="file://$PROJECT_DIR$/../sayHiDjProj/polls/views.py" />
+    <entry file="file://$PROJECT_DIR$/../locallibrary/catalog/views.py" />
+    <entry file="file://$PROJECT_DIR$/../locallibrary/catalog/models.py" />
+    <entry file="file://$PROJECT_DIR$/anotações.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/backup/index-17-9-2018.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="220" column="85" selection-start-line="207" selection-start-column="44" selection-end-line="220" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/products/templates/productsHomePage.html" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project/products/templates/createProduct.html" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project-master/products/models.py" />
+    <entry file="file://$PROJECT_DIR$/../portfolio_project/jobs/templates/jobs_home_page.html" />
+    <entry file="file://$PROJECT_DIR$/../portfolio_project/blog/templates/postDetailPerId.html" />
+    <entry file="file://$PROJECT_DIR$/../portfolio_project/blog/templates/show_blog_posts_homePage.html" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project-master/products/templates/products/home.html" />
+    <entry file="file://$PROJECT_DIR$/../producthunt-project-master/products/views.py" />
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/backup/index_27-8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="281" column="44" selection-start-line="281" selection-start-column="44" selection-end-line="281" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/backup/index-15-9-2018.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="178" column="69" selection-start-line="178" selection-start-column="69" selection-end-line="178" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/paginasGecal/menulateral.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/static/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gecal/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gecal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginasGecal/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

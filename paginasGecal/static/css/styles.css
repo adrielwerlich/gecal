@@ -1,0 +1,182 @@
+/**{margin: 0; padding: 0;}
+
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.menu{list-style:none; border:1px solid #c0c0c0; float:left; }
+
+.menu li{position:relative; float:left; border-right:1px solid #c0c0c0; }
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{background:#333; color:#fff; -moz-box-shadow:0 3px 10px 0 #CCC; -webkit-box-shadow:0 3px 10px 0 #ccc; text-shadow:0px 0px 5px #fff; }
+
+.menu li ul{position:absolute; top:25px; left:0; background-color:#fff; display:none; }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{border:1px solid #c0c0c0; display:block; width:150px;}
+*/
+
+.footer-site{
+    backgroud-color: #333333;
+    color: #ffffff;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.thumbnail{
+    background: url("../imagens/gecal_logo.jpg");
+}
+
+.img-site{
+    background: url("../imagens/gecal_logo_2.png");
+    backgroud-position: center top;
+    backgroud-repeat: no-repeat;
+    backgroud-size: cover;
+    backgroud-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #000000;
+}
+
+.header-site{ /* configura o estilo do topo do site */
+    background: url("../imagens/gecal_logo.jpg");
+   /* backgroud-image: url("../imagens/gecal_logo.jpg");*!*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; /* é a propriedade que faz a imagem cobrir todo o tamanhanho da página*/
+    background-attachment: fixed; /* torna a imagem fixa quando houver evento "scroll"*/
+    /*color: #fffff;*/
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.content-site {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+*{margin: 0; padding: 0;}
+
+body{
+	font-family:arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#menu-superior-id {
+	margin:0 auto;
+	list-style:none;
+}
+#menu-superior-id li {
+	display: inline-block;
+	float:left;
+	border: 1px solid #c0c0c0
+}
+
+#menu-superior-id a {
+	display:block;
+	text-align:center;
+	width:150px; /* fixed width */
+	text-decoration:none;
+}
+
+#menu-superior-id li ul{
+	display:none;
+	position: absolute;
+}
+
+#menu-superior-id li:hover ul, #menu-superior-id li.over ul{display:block;}
+
+#menu-superior-id a:hover{
+	background:#888;
+	color: #fff;
+	-moz-box-shadow: 0 3px 10px 0 #CCC;
+	-webkit-box-shadow: 0 3px 10px 0 #ccc;
+	text-shadow: 0px 0px 5px #fff;
+}
+
+/* 
+ * .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+ * 
+ * .menu li ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li {
+	border: 1px solid #c0c0c0;
+	display: block;
+	width: 150px;
+}*/
+/* 
+.container-fluid ul {
+	width:100%;
+	display: table;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	float: none;
+}
+
+.container-fluid li{
+	display: inline;
+	float:left;
+	position:relative;
+	border: 1px solid #c0c0c0;
+}
+*/
+.menu{
+	list-style: none;
+	border: 1px solid #c0c0c0;
+	float: left;
+}
+
+
+.menu li {
+	position: relative;
+	float:left;
+	border-right: 1px solid #c0c0c0;
+}
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+ 
+
+.menu li a:hover{
+background:#333;
+color:#fff;	
+-moz-box-shadhow:0 3px 10px 0 #CCC;
+-webkit-box-shadow: 0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+
+.menu li ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li {
+	border: 1px solid #c0c0c0;
+	display: block;
+	width: 150px;
+}
+
+body {
+	/*background: white url("paginasGecal/static/imagens/gecal_logo.jpg") no-repeat;*/
+	background-position: center;
+}

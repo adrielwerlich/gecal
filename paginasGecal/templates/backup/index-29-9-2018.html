@@ -1,0 +1,599 @@
+{% extends "modelo_base_uniplac.html" %}
+
+{% block comment %}{% endblock %}
+
+{% block css %}
+{% load static %}<link rel="stylesheet"  type="text/css" href="{% static '/css/estilos.css' %}" />
+{% endblock %}
+
+{% block style %}
+<style>
+.sidenav {
+    width: 220px;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #2E2D88;
+    overflow-x: hidden;
+    padding: 8px 0;
+	border-radius: 6px;
+
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white; /*#2196F3;*/
+    display: block;
+}
+.sidenav a:hover {
+    /*color: white;*/
+	background-color: #578bab !important;
+}
+
+.sidenav li {list-style-type: none;}
+
+.jumbotron {
+	background-color: #2E2D88;
+	color: white;
+	padding: 30px 15px;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+.container-menuLateral{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.container-menuLateral li {
+    border-bottom: 1px solid #F4F4F4;
+	padding: 7px 15px!important;
+	font-size: 12px!important;
+    text-align: left;
+}
+
+.projetos_dropdown{
+	position:relative;
+	cursor: pointer;
+}
+
+.dropdown-content_projetos{
+	/*color: ;*/
+	width: 220px;
+	position: absolute;
+	float: left;
+	background-color: whitesmoke;
+	display:none;
+}
+
+
+
+.projetos_dropdown:hover .dropdown-content_projetos{
+	display:block;
+}
+
+.my_anchor{
+	color: #1D5377 !important;
+	display:block;
+}
+
+
+</style>
+
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript">
+		// function show_hide_texto_historico(){
+		// 	//var btn = document.getElementById('bt_hide_show');
+		// 	var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		//
+		// 	if (txt_inicial.style.display == 'none'){
+		// 		txt_inicial.style.display = 'block';
+		// 		txt_historico.style.display = 'none';
+		// 		projetos.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 	} else {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'block';
+		// 		projetos.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 	}
+		// }
+		//
+		// function mostra_projetos_de_pesquisa(){
+		//
+		// 	var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		// 	if (projetos.style.display == 'none') {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 		projetos.style.display = 'block';
+		//
+		// 	}
+		// }
+		//
+		// function mostra_projetos_de_extensao(){
+		//     var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		// 	if (projetos_de_extensao.style.display == 'none') {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		projetos.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'block';
+		// 	}
+		// }
+		//
+		// function alternar_abas(){
+		//     var tab_content_projetos_em_andamento = document.getElementById("tabContent_projetos_em_andamento")
+		// 	var tab_content_projetos_concluidos = document.getElementById("tabContent_projetos_concluidos")
+		//
+		// 	if (tab_content_projetos_em_andamento.style.display == 'block'){
+		// 	    tab_content_projetos_em_andamento.style.display = 'none'
+		// 		tab_content_projetos_concluidos.style.display = 'block'
+		// 	} else {
+		// 	    tab_content_projetos_em_andamento.style.display = 'block'
+		// 		tab_content_projetos_concluidos.style.display = 'none'
+		// 	}
+		//
+		// }
+		//
+		// function alternar_abas_extensao(){
+		//     var tab_content_proj_ext_andamento = document.getElementById("tabContent_proj_extensao_em_andamento")
+		// 	var tab_content_proj_ext_concluidos = document.getElementById("tabContent_projetos_ext_concluidos")
+		//
+		// 	if (tab_content_proj_ext_andamento.style.display == 'block'){
+		// 	    tab_content_proj_ext_andamento.style.display = 'none';
+		// 	    tab_content_proj_ext_concluidos.style.display = 'block';
+		// 	} else {
+		// 	    tab_content_proj_ext_andamento.style.display = 'block';
+		// 	    tab_content_proj_ext_concluidos.style.display = 'none';
+		// 	}
+		// }
+		//
+		// function mostra_pesquisadores() {
+		// 	var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		// 	if (pesquisadores.style.display == 'none') {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'none';
+		// 		projetos.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 		pesquisadores.style.display = 'block';
+		//
+		// 	}
+        // }
+		//
+		// function mostra_bolsistas() {
+		// 	var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		// 	if (bolsistas.style.display == 'none') {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'none';
+		// 		projetos.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 		bolsistas.style.display = 'block';
+		//
+		// 	}
+        // }
+		//
+        // function mostra_formulario() {
+		//     var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		// 	if (formulario_denuncia.style.display == 'none') {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'none';
+		// 		projetos.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		formulario_denuncia2.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'block';
+		// 	}
+		// }
+		//
+		// function mostra_formulario_2() {
+		//     var txt_inicial = document.getElementById('tituloJumbo');
+		// 	var txt_historico = document.getElementById('historico');
+		// 	var projetos = document.getElementById('abas_projetos');
+		// 	var pesquisadores = document.getElementById("lista_pesquisadores")
+		// 	var bolsistas = document.getElementById("lista_de_bolsistas")
+		// 	var projetos_de_extensao = document.getElementById("abas_projetos_extensao")
+		// 	var formulario_denuncia = document.getElementById("formulario_de_denuncias")
+		// 	var formulario_denuncia2 = document.getElementById("formulario_de_denuncias2")
+		//
+		// 	if (formulario_denuncia2.style.display == 'none') {
+		// 		txt_inicial.style.display = 'none';
+		// 		txt_historico.style.display = 'none';
+		// 		projetos.style.display = 'none';
+		// 		pesquisadores.style.display = 'none';
+		// 		projetos_de_extensao.style.display = 'none';
+		// 		bolsistas.style.display = 'none';
+		// 		formulario_denuncia.style.display = 'none';
+		//
+		// 		formulario_denuncia2.style.display = 'block';
+		// 	}
+		// }
+		//
+		// function habilita_desabilita_text_input(){
+		//     txt_outros = document.getElementById("input_outros")
+		//
+		// 	console.log("txt_outros.disabled")
+		// 	console.log(txt_outros.disabled)
+		//
+		// 	if (txt_outros.disabled == true)
+		// 	    txt_outros.disabled = false
+		// 	else if (txt_outros.disabled == false)
+		// 		txt_outros.disabled = true
+		//
+		// 	txt_outros.focus()
+		// }
+
+	</script>
+{% endblock %}
+
+
+{% block content %}
+<body>
+
+<hr/>
+<div class="row">
+	<div class="container-menuLateral col-sm-3">
+		<div class="sidenav">
+			<a role="button" id="bt_hide_show" onclick="show_hide_texto_historico()" >
+			Gecal - Histórico</a>
+
+			<div class="projetos_dropdown">
+
+				<a role="button"> Projetos <span class="caret"></span></a>
+				<div class="dropdown-content_projetos">
+					<a role="button" class="my_anchor" onclick="mostra_projetos_de_pesquisa()" > Projetos de Pesquisa </a>
+					<a role="button" class="my_anchor" onclick="mostra_projetos_de_extensao()" > Projetos de Extensão </a>
+				</div>
+
+			</div>
+
+			<a role="button" id="bt_mostra_pesquisadores" onclick="mostra_pesquisadores()"> Pesquisadores </a>
+			<a role="button" id="bt_mostra_bolsistas" onclick="mostra_bolsistas()"> Bolsistas </a>
+			<a href="#"> Galerias </a>
+			<a href="localhost:1234/admin"  id="anchorAdminId"> Admin </a>
+			<a href="{% url 'admin:index' %}"> Acessar Interface Admins </a></a>
+
+			<a role="button" onclick="mostra_formulario()">Observatório de violência</a>
+			<a role="button" onclick="mostra_formulario_2()">Observatório de violência - 2 </a>
+		</div>
+	</div>
+
+
+	<!-- MOSTRA O JUMBOTRON -->
+	<div class="jumbotron col-sm-8" id="tituloJumbo">
+		<p>
+			{{ jumbotron }}
+		</p>
+
+	</div>
+	<!-- DIV QUE MOSTRA O HISTÓRICO -->
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8" id="historico" style="display:none;">
+		<h4>HISTÓRICO</h4>
+
+		<p>{{ historico }}</p>
+	</div>
+
+	<!-- MOSTRA AS ABAS DE PROJETOS DE PESQUISA EM ANDAMENTO E CONCLUÍDO -->
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="abas_projetos"><!--cria 2 abas de navegação-->
+		<ul class="nav nav-tabs" >
+			<li class="active"><a data-toggle="tab" href="#aba_projetos_em_andamento" onclick="alternar_abas()">
+				Projetos Em Andamento</a>
+			</li>
+
+			<li><a data-toggle="tab" href="#aba_projetos_concluidos" onclick="alternar_abas()">
+				Projetos Concluídos</a>
+			</li>
+		</ul>
+
+		<div id="aba_projetos_em_andamento" class="tab-pane fade active in" > <!--cria o conteudo da aba de projetos concluidos -->
+
+
+
+			<div class="tab-content" id="tabContent_projetos_em_andamento" style="display:block;">
+			{% for pesquisa in pesquisas_andamento.all %}
+				<h4>
+					<a href="#{{ pesquisa.id }}" data-toggle="collapse">
+						{{ pesquisa.titulo }}
+					</a>
+				</h4>
+				<div id="{{pesquisa.id}}" class="collapse">
+					<strong>Ementa:</strong> {{ pesquisa.ementa }}
+					<a href=" url app_name:page_name.html "> + info </a>
+				</div>
+			{% endfor %}
+			</div>
+
+		</div>
+
+		<div id="aba_projetos_concluidos" class="tab-pane fade" > <!--cria o conteudo da aba de projetos concluidos -->
+
+					<div class="tab-content" id="tabContent_projetos_concluidos"
+						style="display:none;">
+				{% for pesquisa_concluida in pesquisas_concluidas.all %}
+					<h4>
+						<a href="#{{pesquisa_concluida.id}}" data-toggle="collapse">
+							{{ pesquisa_concluida.titulo }}
+						</a>
+					</h4>
+					<div id="{{pesquisa_concluida.id}}" class="collapse">
+						<strong>Ementa:</strong> {{ pesquisa_concluida.ementa }}
+					</div>
+				{% endfor %}
+				</div>
+
+
+		</div>
+	</div>   <!-- FECHA A DIV DAS ABAS DOS PROJETOS DE PESQUISA-->
+
+
+	<!-- MOSTRA AS ABAS DE PROJETOS DE EXTENSÃO EM ANDAMENTO E CONCLUÍDO -->
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="abas_projetos_extensao"><!--cria 2 abas de navegação-->
+		<ul class="nav nav-tabs" >
+			<li class="active"><a data-toggle="tab" href="#aba_projetos_extensao_em_andamento" onclick="alternar_abas_extensao()">
+				Projetos Em Andamento</a>
+			</li>
+
+			<li><a data-toggle="tab" href="#aba_projetos_ext_concluidos" onclick="alternar_abas_extensao()">
+				Projetos Concluídos</a>
+			</li>
+		</ul>
+
+		<div id="aba_projetos_extensao_em_andamento" class="tab-pane fade active in" > <!--cria o conteudo da aba de projetos concluidos -->
+
+
+			<div class="tab-content" id="tabContent_proj_extensao_em_andamento" style="display:block;">
+
+				{% for projeto_andamento in projeto_de_extensao_andamento.all %}
+				<h4>
+					<a href="#{{projeto_andamento.id }}" data-toggle="collapse">
+						{{projeto_andamento.titulo }}
+					</a>
+				</h4>
+				<div id="{{projeto_andamento.id}}" class="collapse">
+					<strong>Ementa:</strong> {{projeto_andamento.ementa }}
+					<a href=" url app_name:page_name.html "> + info </a>
+				</div>
+				{% endfor %}
+			</div>
+
+		</div>
+
+		<div id="aba_projetos_ext_concluidos" class="tab-pane fade" > <!--cria o conteudo da aba de projetos concluidos -->
+
+			<div class="tab-content" id="tabContent_projetos_ext_concluidos"
+				 style="display:none;">
+				{% for projeto_concluido in projeto_de_extensao_concluido.all %}
+				<h4>
+					<a href="#{{projeto_concluido.id}}" data-toggle="collapse">
+						{{projeto_concluido.titulo }}
+					</a>
+				</h4>
+				<div id="{{projeto_concluido.id}}" class="collapse">
+					<strong>Ementa:</strong> {{projeto_concluido.ementa}}
+				</div>
+				{% endfor %}
+			</div>
+
+
+		</div>
+	</div>   <!-- FECHA A DIV DAS ABAS DOS PROJETOS DE EXTENSÃO-->
+
+
+	<!-- COMEÇA A DIV QUE MOSTRA OS PESQUISADORES -->
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="lista_pesquisadores">
+
+		{% for pesquisador in pesquisadores.all %}
+		<h4>
+			<a href="#{{ pesquisador.id }}" data-toggle="collapse">
+				{{ pesquisador.nome }} , {{ pesquisador.id }}
+			</a>
+		</h4>
+		<div id="{{ pesquisador.id }}" class="collapse">
+			mostrar algum conteudo relacionado ao pesquisador , {{ pesquisador.id }}
+		</div>
+		{% endfor %}
+	</div><!-- FECHA A DIV DA LISTA DE PESQUISADORES -->
+
+	<!-- COMEÇA A DIV QUE MOSTRA OS BOLSISTAS -->
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="lista_de_bolsistas">
+
+		{% for bolsista in bolsistas.all %}
+		<h4>
+			<a href="#{{ bolsista.id }}" data-toggle="collapse">
+				{{ bolsista.nome }}
+			</a>
+		</h4>
+		<div id="{{ bolsista.id}}" class="collapse">
+			mostrar algum conteudo relacionado ao bolsista
+		</div>
+		{% endfor %}
+	</div><!-- FECHA A DIV DA LISTA DE BOLSISTAS -->
+	<!-- COMEÇA A DIV QUE MOSTRA O FORMULÁRIO DE DENÚNCIA -->
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="formulario_de_denuncias">
+		<h2>Formulário para casos de relato de violência</h2>
+
+		<iframe height="300px" width="100%" src="https://docs.google.com/forms/d/e/1FAIpQLSdWxmbH7rUfnA0Lc19UHllcjZRM1RP1QJs6KX8lRgFITvz2pA/viewform" name="iframe_a"></iframe>
+	</div><!-- FECHA A DIV DO FORMULÁRIO DE DENÚNCIA -->
+
+	<!-- COMEÇA A DIV QUE MOSTRA O FORMULÁRIO DE DENÚNCIA2 -->
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="formulario_de_denuncias2">
+		<h2>Formulário para casos de relato de violência</h2>
+
+		<form>
+			<h4>Você vivenciou ou testemunhou caso de violência ?</h4>
+
+			<label class="container"> Vivenciei
+				<input type="radio" value="vivenciou" checked="checked" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container"> Presenciei
+				<input type="radio" value="presenciou" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<hr>
+			<!-- COMEÇAM OS CHECKBUTTONS -->
+			<h4> Tipo de Violência </h4>
+
+			<label class="checkbox_container">Violência Física
+				<input type="checkbox" checked="checked">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Violência Psicológica
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Assédio Sexual
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Estupro
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Assédio Moral
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Violência Patrimonial
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Homofobia
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Lesbofobia
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Transfobia
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container">Ameaça Verbal
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+
+			<label class="checkbox_container lb_inline_block" onchange="habilita_desabilita_text_input()">Outro
+				<input type="checkbox">
+				<span class="checkbox_checkmark"></span>
+			</label>
+			<input type="text" id="input_outros" class="input_inline_block" disabled>
+
+
+			<button class="bt_inl_block btn-primary btn-lg" onclick="chama_formulario_de_descricao()"> Próximo Passo </button>
+			<!--<input type="radio" name="tipo" value="vivenciou" checked> Vivenciei <br>-->
+		  <!--<input type="radio" name="tipo" value="testemunhou"> Presenciei <br>-->
+
+		</form>
+	</div><!-- FECHA A DIV DO FORMULÁRIO DE DENÚNCIA2 -->
+
+
+
+</div>
+
+</body>
+<hr/>
+
+
+{% endblock %}
+<br> <br> <br>
+<!-- 	</div> -->
+
+<footer>
+	<div class="container-fluid" style="margin-left: 15px">
+		<p>
+			<a
+					href="https://www.facebook.com/Gecal-Grupo-de-Pesquisa-em-G%C3%AAnero-Educa%C3%A7%C3%A3o-e-Cidadania-na-Am%C3%A9rica-Latina-1789206161123983/"
+					target="blank">Facebook</a> | <a href="http://dgp.cnpq.br/dgp/espelhogrupo/0019510862452049" target="blank">CNPq</a>
+		</p>
+	</div>
+</footer>
+
+

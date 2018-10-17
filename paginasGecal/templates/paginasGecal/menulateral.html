@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Menu lateral </title>
+</head>
+<body>
+
+
+<div class="row">
+<div class="container-menuLateral col-sm-3">
+    <div class="sidenav">
+        <a role="button" id="bt_hide_show" onclick="show_hide_texto_historico()" >
+            Gecal - Histórico</a>
+
+        <div class="projetos_dropdown">
+
+            <a role="button"> Projetos <span class="caret"></span></a>
+            <div class="dropdown-content_projetos">
+                <a role="button" class="my_anchor" onclick="mostra_projetos_de_pesquisa()" > Projetos de Pesquisa </a>
+                <a role="button" class="my_anchor" onclick="mostra_projetos_de_extensao()" > Projetos de Extensão </a>
+            </div>
+
+        </div>
+
+        <a role="button" id="bt_mostra_pesquisadores" onclick="mostra_pesquisadores()"> Pesquisadores </a>
+        <a role="button" id="bt_mostra_bolsistas" onclick="mostra_bolsistas()"> Bolsistas </a>
+        <a href="#"> Galerias </a>
+        <a href="localhost:1234/admin" onclick="document.location='localhost:1234/admin:index';" id="anchorAdminId">Anchor</a>
+        <a href="{% url 'admin:index' %}"> Login </a></a>
+        <!-- 					<li><a href=" url 'app_teste:ind_app_teste' ">App_teste</a></li> -->
+        <a href="{% url 'denunciar:indice_denunciar' %}">Denunciar</a>
+    </div>
+</div>
+    <!-- MOSTRA O JUMBOTRON -->
+    <div class="jumbotron col-sm-8" id="tituloJumbo">
+        <p>
+            {{ jumbotron }}
+        </p>
+
+    </div>
+    <!-- DIV QUE MOSTRA O HISTÓRICO -->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8" id="historico" style="display:none;">
+        <h4>HISTÓRICO</h4>
+
+        <p>{{ historico }}</p>
+    </div>
+
+    <!-- MOSTRA AS ABAS DE PROJETOS EM ANDAMENTO E CONCLUÍDO -->
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="abas_projetos"><!--cria 2 abas de navegação-->
+        <ul class="nav nav-tabs" >
+            <li class="active"><a data-toggle="tab" href="#aba_projetos_em_andamento" onclick="alternar_abas()">
+                Projetos Em Andamento</a>
+            </li>
+
+            <li><a data-toggle="tab" href="#aba_projetos_concluidos" onclick="alternar_abas()">
+                Projetos Concluídos</a>
+            </li>
+        </ul>
+
+        <div id="aba_projetos_em_andamento" class="tab-pane fade active in" > <!--cria o conteudo da aba de projetos concluidos -->
+
+
+
+            <div class="tab-content" id="tabContent_projetos_em_andamento" style="display:block;">
+                {% for pesquisa in pesquisas_andamento.all %}
+                <h4>
+                    <a href="#{{ pesquisa.id }}" data-toggle="collapse">
+                        {{ pesquisa.titulo }}
+                    </a>
+                </h4>
+                <div id="{{ pesquisa.id}}" class="collapse">
+                    <strong>Ementa:</strong> {{ pesquisa.ementa }}
+                    <a href=" url app_name:page_name.html "> + info </a>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+        <div id="aba_projetos_concluidos" class="tab-pane fade" > <!--cria o conteudo da aba de projetos concluidos -->
+
+            <div class="tab-content" id="tabContent_projetos_concluidos"
+                 style="display:none;">
+                {% for pesquisa in pesquisas_concluidas.all %}
+                <h4>
+                    <a href="#{{ pesquisa.id}}" data-toggle="collapse">
+                        {{ pesquisa.titulo }}
+                    </a>
+                </h4>
+                <div id=" {{ pesquisa.id }} " class="collapse">
+                    <strong>Ementa:</strong> {{ pesquisa.ementa }}
+                </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>   <!-- FECHA A DIV DAS ABAS DOS PROJETOS -->
+
+    <!-- COMEÇA A DIV QUE MOSTRA OS PESQUISADORES -->
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="lista_pesquisadores">
+
+        {% for pesquisador in pesquisadores.all %}
+        <h4>
+            <a href="#{{ pesquisador.id }}" data-toggle="collapse">
+                {{ pesquisador.nome }} , {{ pesquisador.id }}
+            </a>
+        </h4>
+        <div id="{{ pesquisador.id }}" class="collapse">
+            mostrar algum conteudo relacionado ao pesquisador , {{ pesquisador.id }}
+        </div>
+        {% endfor %}
+    </div><!-- FECHA A DIV DA LISTA DE PESQUISADORES -->
+
+    <!-- COMEÇA A DIV QUE MOSTRA OS BOLSISTAS -->
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="lista_de_bolsistas">
+
+        {% for bolsista in bolsistas.all %}
+        <h4>
+            <a href="#{{ bolsista.id }}" data-toggle="collapse">
+                {{ bolsista.nome }}
+            </a>
+        </h4>
+        <div id="{{ bolsista.id}}" class="collapse">
+            mostrar algum conteudo relacionado ao bolsista
+        </div>
+        {% endfor %}
+    </div><!-- FECHA A DIV DA LISTA DE BOLSISTAS -->
+
+</div>
+
+</body>
+</html>

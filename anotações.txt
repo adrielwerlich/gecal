@@ -1,0 +1,579 @@
+	{% verbatim %}verbatimbeg
+	<div id="app">
+
+	</div>
+
+	<div id="app-2">
+	  <span v-bind:title="message_app2">
+    	Hover your mouse over me for a few seconds
+    	to see my dynamically bound title!
+	  </span>
+	</div>
+	{% endverbatim %} verbatimend
+
+
+
+   {% if formulario.errors %}
+                {% for field in formulario %}
+                {% for error in field.errors %}
+                     <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                     </div>
+                {% endfor %}
+                {% endfor %}
+            {% for error in formulario.non_field_errors %}
+            <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+------------------------------------------------------------------------
+    # print(chaves_post.__len__)
+    # print('chaves_post.__iter__')
+    # print(chaves_post.__iter__)
+    # print('dir(chaves_post)')
+    # print(dir(chaves_post))
+    # print('help(chaves_post)')
+    # print(help(chaves_post))
+    # print('chaves_post')
+    # print(chaves_post)
+    # nome = request.POST['nome_denunciante']
+    # email = request.POST['email_denunciante']
+    # tel = request.POST['tel_denunciante']
+    # tp_experiencia = request.POST['radio']
+    # if (request.POST['check_vf']):
+    #     violencia_fisica = True
+    # if (request.POST['check_vps']):
+    #     violencia_psicologia = True
+    # print('vf: ')
+    # print(request.POST['violencia_fisica'])
+    # print('vps : ')
+    # print(request.POST['violencia_psicologica'])
+
+    # print('tel do denunciante : ' + tel)
+    # print('tp_exp do denunciante : ' + tp_experiencia)
+    # for (key in request.POST.keys()):
+
+    # print('request.POST __ gravar_d view')
+    # print(request.POST.keys())
+
+    #
+    # txt_relato = request.GET['txt_relato']
+    # print('txt_relato')
+    # print(txt_relato)
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------
+/*.tabContent_projetos_em_andamento>.*/
+
+/*#aba_projetos_em_andamento>.tab-pane fade active{*/
+	/*display : block;*/
+/*}*/
+
+/*#aba_projetos_em_andamento>.tab-pane fade {*/
+	/*display : none;*/
+/*}*/
+
+/*#aba_projetos_concluidos>.tab-pane fade active{*/
+	/*display : block;*/
+/*}*/
+
+/*#aba_projetos_concluidos>.tab-pane fade {*/
+	/*display : none;*/
+/*}*/
+
+
+
+
+/*.tab-content>.tab-pane fade {*/
+    /*display: none;*/
+/*}*/
+
+/*.tab-content>.tab-pane fade active{*/
+    /*display: block;*/
+/*}*/
+
+
+________________________________________________________________________________________
+// console.log("antes de executar comparações do dislay das abas --> ")
+			// console.log("aba_projetos_em_andamento.style.display: " + aba_projetos_em_andamento.style.display)
+			// console.log("aba_projetos_concluidos.style.display: " + aba_projetos_concluidos.style.display)
+
+			// if (aba_projetos_em_andamento.className == 'tab-pane fade active in') {
+			//     nodes = aba_projetos_em_andamento.childNodes
+			//
+			// 	for (node in nodes)
+			// 	    node.style.display = 'none'
+			//     // aba_projetos_concluidos.style.display = 'none'
+			//     // aba_projetos_em_andamento.style.display = 'block'
+			// } else if (aba_projetos_concluidos.className == 'tab-pane fade active in') {
+			//     nodes = aba_projetos_concluidos.childNodes
+			//
+			// 	for (node in nodes)
+			// 	    node.style.display = 'none'
+
+			    // aba_projetos_concluidos.style.display = 'block'
+			    // aba_projetos_em_andamento.style.display = 'none'
+			}
+
+			// console.log("depois de executar comparações do dislay das abas --> ")
+			// console.log("aba_projetos_em_andamento.className: " + aba_projetos_em_andamento.className)
+			// console.log("aba_projetos_concluidos.className: " + aba_projetos_concluidos.className)
+			/*console.log("aba_projetos_concluidos.style.display: " + aba_projetos_concluidos.style.display)*/
+
+
+
+_______________________________________________________________
+    #print("dir.pesquisa --> " + str(dir(pesquisas)))
+    #print("pesquisa.values: -- > " + str(pesquisas.values))
+    #print("pesquisa.values(): -- > " + str(pesquisas.values()))
+    #print("tentando pegar id: " + str(pesquisas[0].id))
+    #print("tentando pegar definição de concluido: " + str(pesquisas_andamento[0]))
+    #print("pesquisa.values_list: -- > " + str(pesquisas.values_list))
+    #print("pesquisa.values_list(): -- > " + str(pesquisas.values_list()))
+    #print("pesquisa.raw: -- > " + str(pesquisas.raw))
+    #print("pesquisa.raw(): -- > " + str(pesquisas.raw()))
+    # for i, pesq in enumerate(pesquisas):
+    #     print("pesquisa " + str(i) + " : " + pesq.titulo)
+    #     print("pesquisa " + str(i) + " : " + pesq.ementa)
+
+
+    #length = len(txt_hist)
+
+    #print
+    #texto = textwrap.wrap(txt_hist, 628)
+
+    # length //= 2
+    # print('comprimento : ' + str(length))
+
+    # primeira_parte = txt_hist[:length]
+    # segunda_parte = txt_hist[length :]
+    # for i, txt in enumerate(texto):
+    #     print("parte " + str(i) + " do texto: " + texto[i])
+    #print("segunda parte: " + texto[1])
+    # txt_jumbotron = historicoGecal.textoJumbotron()
+    # txt_historico = historicoGecal.textoHistorico()
+    # print("debug texto jumbo: " + type(txt_jumbotron))
+    #print("debug texto histo: " + txt_hist)
+
+
+______________________________________________________________________________
+
+
+{%block comment%}<pre> {% filter force_escape %} {% debug %} {% endfilter %} </pre>{% endblock %}
+{% block comment %}{{ pesquisas.all }}{% endblock  %}
+
+
+_______________________________________________________
+# para criar usuario admin
+
+python manage.py createsuperuser
+
+pesquisa = LinhaDePesquisa.objects.get(pk=idpesquisa)
+____________________________________________________
+
+.alwi-menu-ativo {
+    background-color: #578bab !important;
+}
+
+var es = document.getElementById('anchorAdminId')
+		  es.addEventListener('click', function(e) {
+		  	e.preventDefault()
+		  	document.localtion.hash = e.target.getAttribute('href')
+		  }
+
+
+		document.addEventListener('DOMContentLoaded', function(){
+		  var es = document.getElementById('anchorAdminId')
+		  es.addEventListener('click', function(e) {
+		  	e.preventDefault()
+		  	document.location.hash = e.target.getAttribute('href')
+		  }
+		})
+
+
+_____________________________________________________________________________________
+<div id="concluidos" class="tab-pane fade">
+						<div class="col-md-6">
+						<div class="tab-content">
+						<h3>PROJETO INTERINSTITUCIONAL ANTROPOLOGIA, GÊNERO E EDUCAÇÃO EM SANTA CATARINA 2013-2015
+						</div>
+						</div>
+					</div>	
+_________________________________________
+D:\backup\eclipse-workspace\ec_photon\Gecal\paginasGecal\templates\proj3Conteudo.html
+
+D:\backup\eclipse-workspace\ec_photon\Gecal\paginasGecal\templates\paginasGecal\proj3Conteudo.html
+________________________________________
+	<link rel="stylesheet" href="{% static 'paginasGecal/css/bootstrap.min.css' %}" type="text/css" />
+
+	<meta name="viewport" content="width=device-width, 		initial-scale=1.0">
+
+	<style type="text/css">
+		html,
+		body { height:100% }
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div>
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+
+</html>
+_________________________________________________________________________________________________
+
+# -*- coding: utf-8 -*-
+"""
+BR-specific Form helpers
+"""
+
+from __future__ import absolute_import, unicode_literals
+
+import re
+
+from django.core.validators import EMPTY_VALUES
+from django.forms import ValidationError
+from django.forms.fields import Field, RegexField, CharField, Select
+from django.utils.translation import ugettext_lazy as _
+
+try:
+    from django.utils.encoding import smart_text
+except ImportError:
+    from django.utils.encoding import smart_unicode as smart_text
+
+from .br_states import STATE_CHOICES
+
+phone_digits_re = re.compile(r'^(\d{2})[-\.]?(\d{4,5})[-\.]?(\d{4})$')
+
+
+[docs]class BRZipCodeField(RegexField):
+    """
+    A form field that validates input as a Brazilian zip code, with the format
+    XXXXX-XXX.
+    """
+    default_error_messages = {
+        'invalid': _('Enter a zip code in the format XXXXX-XXX.'),
+    }
+
+    def __init__(self, max_length=None, min_length=None, *args, **kwargs):
+        super(BRZipCodeField, self).__init__(r'^\d{5}-\d{3}$',
+                                             max_length, min_length, *args, **kwargs)
+
+
+[docs]class BRPhoneNumberField(Field):
+    """
+    A form field that validates input as a Brazilian phone number, with the format
+    XX-XXXX-XXXX.
+    """
+    default_error_messages = {
+        'invalid': _(('Phone numbers must be in either of the following '
+                      'formats: XX-XXXX-XXXX or XX-XXXXX-XXXX.')),
+    }
+
+    def clean(self, value):
+        super(BRPhoneNumberField, self).clean(value)
+        if value in EMPTY_VALUES:
+            return ''
+        value = re.sub('(\(|\)|\s+)', '', smart_text(value))
+        m = phone_digits_re.search(value)
+        if m:
+            return '%s-%s-%s' % (m.group(1), m.group(2), m.group(3))
+        raise ValidationError(self.error_messages['invalid'])
+
+
+[docs]class BRStateSelect(Select):
+    """
+    A Select widget that uses a list of Brazilian states/territories
+    as its choices.
+    """
+    def __init__(self, attrs=None):
+        super(BRStateSelect, self).__init__(attrs, choices=STATE_CHOICES)
+
+
+[docs]class BRStateChoiceField(Field):
+
+    """
+    A choice field that uses a list of Brazilian states as its choices.
+    """
+    widget = Select
+    default_error_messages = {
+        'invalid': _('Select a valid brazilian state. That state is not one of the available states.'),
+    }
+
+    def __init__(self, required=True, widget=None, label=None,
+                 initial=None, help_text=None):
+        super(BRStateChoiceField, self).__init__(required, widget, label,
+                                                 initial, help_text)
+        self.widget.choices = STATE_CHOICES
+
+    def clean(self, value):
+        value = super(BRStateChoiceField, self).clean(value)
+        if value in EMPTY_VALUES:
+            value = ''
+        value = smart_text(value)
+        if value == '':
+            return value
+        valid_values = set([smart_text(k) for k, v in self.widget.choices])
+        if value not in valid_values:
+            raise ValidationError(self.error_messages['invalid'])
+        return value
+
+
+def DV_maker(v):
+    if v >= 2:
+        return 11 - v
+    return 0
+
+
+[docs]class BRCPFField(CharField):
+    """
+    A form field that validates a CPF number or a CPF string. A CPF number is
+    compounded by XXX.XXX.XXX-VD. The two last digits are check digits.
+
+    More information:
+    http://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas
+    """
+    default_error_messages = {
+        'invalid': _("Invalid CPF number."),
+        'max_digits': _("This field requires at most 11 digits or 14 characters."),
+        'digits_only': _("This field requires only numbers."),
+    }
+
+    def __init__(self, max_length=14, min_length=11, *args, **kwargs):
+        super(BRCPFField, self).__init__(max_length, min_length, *args, **kwargs)
+
+[docs]    def clean(self, value):
+        """
+        Value can be either a string in the format XXX.XXX.XXX-XX or an
+        11-digit number.
+        """
+        value = super(BRCPFField, self).clean(value)
+        if value in EMPTY_VALUES:
+            return ''
+        orig_value = value[:]
+        if not value.isdigit():
+            value = re.sub("[-\.]", "", value)
+        try:
+            int(value)
+        except ValueError:
+            raise ValidationError(self.error_messages['digits_only'])
+        if len(value) != 11:
+            raise ValidationError(self.error_messages['max_digits'])
+        orig_dv = value[-2:]
+
+        new_1dv = sum([i * int(value[idx])
+                      for idx, i in enumerate(range(10, 1, -1))])
+        new_1dv = DV_maker(new_1dv % 11)
+        value = value[:-2] + str(new_1dv) + value[-1]
+        new_2dv = sum([i * int(value[idx])
+                      for idx, i in enumerate(range(11, 1, -1))])
+        new_2dv = DV_maker(new_2dv % 11)
+        value = value[:-1] + str(new_2dv)
+        if value[-2:] != orig_dv:
+            raise ValidationError(self.error_messages['invalid'])
+
+        return orig_value
+
+
+[docs]class BRCNPJField(Field):
+    """
+    A form field that validates input as `Brazilian CNPJ`_.
+
+    Input can either be of the format XX.XXX.XXX/XXXX-XX or be a group of 14
+    digits.
+
+    .. _Brazilian CNPJ: http://en.wikipedia.org/wiki/National_identification_number#Brazil
+
+    """
+    default_error_messages = {
+        'invalid': _("Invalid CNPJ number."),
+        'digits_only': _("This field requires only numbers."),
+        'max_digits': _("This field requires at least 14 digits"),
+    }
+
+[docs]    def clean(self, value):
+        """
+        Value can be either a string in the format XX.XXX.XXX/XXXX-XX or a
+        group of 14 characters.
+        """
+        value = super(BRCNPJField, self).clean(value)
+        if value in EMPTY_VALUES:
+            return ''
+        orig_value = value[:]
+        if not value.isdigit():
+            value = re.sub("[-/\.]", "", value)
+        try:
+            int(value)
+        except ValueError:
+            raise ValidationError(self.error_messages['digits_only'])
+        if len(value) != 14:
+            raise ValidationError(self.error_messages['max_digits'])
+        orig_dv = value[-2:]
+
+        new_1dv = sum([i * int(value[idx]) for idx, i in enumerate(list(range(5, 1, -1)) + list(range(9, 1, -1)))])
+        new_1dv = DV_maker(new_1dv % 11)
+        value = value[:-2] + str(new_1dv) + value[-1]
+        new_2dv = sum([i * int(value[idx]) for idx, i in enumerate(list(range(6, 1, -1)) + list(range(9, 1, -1)))])
+        new_2dv = DV_maker(new_2dv % 11)
+        value = value[:-1] + str(new_2dv)
+        if value[-2:] != orig_dv:
+            raise ValidationError(self.error_messages['invalid'])
+
+        return orig_value
+________________________________________________________________________________________
+styles.css:
+
+.customDiv{
+	margin: 3px;
+	min-height: 300px;
+	background-color: silver;
+	text-align: center;
+	font-size: large;
+}
+____________________________________________________________________________
+index.html - exemplo com 3 colunas
+<head>
+	<title> html - bootstrap tutorial </title>
+	
+	<link href="customStyles.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"> 
+			
+				<div class="customDiv"> left side </div> 
+			
+			</div>
+			<div class="col-md-8"> 
+			
+				<div class="customDiv"> center area </div>
+			
+			</div>
+			<div class="col-md-2"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+	</div>
+
+</body>
+_______________________________________________________________________
+
+____________________________________________________________________________
+index.html - exemplo com 4 colunas - 1:1:1:1 ratio
+<head>
+	<title> html - bootstrap tutorial </title>
+	
+	<link href="customStyles.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"> 
+			
+				<div class="customDiv"> left side </div> 
+			
+			</div>
+			<div class="col-md-3"> 
+			
+				<div class="customDiv"> center area </div>
+			
+			</div>
+			<div class="col-md-3"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+			<div class="col-md-3"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+			
+	</div>
+
+</body>
+
+____________________________________________________________________________
+index.html - exemplo com 4 colunas - 1:2:2:1 ratio
+<head>
+	<title> html - bootstrap tutorial </title>
+	
+	<link href="customStyles.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"> 
+			
+				<div class="customDiv"> left side </div> 
+			
+			</div>
+			<div class="col-md-4"> 
+			
+				<div class="customDiv"> center area </div>
+			
+			</div>
+			<div class="col-md-4"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+			<div class="col-md-2"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+			
+	</div>
+
+</body>
+
+____________________________________________________________________________
+index.html - exemplo com 4 colunas - 1:2:2:1 ratio
+<head>
+	<title> html - bootstrap tutorial </title>
+	
+	<link href="customStyles.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-lg-9"> 
+			
+				<div class="customDiv"> left side </div> 
+			
+			</div>
+			<div class="col-md-3 col-lg-3"> 
+			
+				<div class="customDiv"> center area </div>
+			
+			</div>
+			<div class="col-md-3 col-lg-9"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+			<div class="col-md-3 col-lg-3"> 
+				
+				<div class="customDiv"> right side </div>
+	
+			</div> 
+			
+	</div>
+
+</body>

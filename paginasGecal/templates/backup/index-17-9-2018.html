@@ -1,0 +1,296 @@
+{% extends "modelo_base_uniplac.html" %}
+
+
+
+{% block css %}
+{% block comment %}{% load static %}<link rel="stylesheet"  type="text/css" href="{% static '/css/estilo_menu_lateral.css' %}" />{% endblock %}
+{% endblock %}
+
+{% block style %}
+<style>
+.sidenav {
+    width: 220px;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+    le
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2196F3;
+    display: block;
+}
+.sidenav a:hover {
+    color: #064579;
+}
+
+.sidenav li {list-style-type: none;}
+
+.jumbotron {
+	background-color: #2E2D88;
+	color: white;
+	padding: 30px 15px;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+.container-menuLateral{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: 25px;
+
+}
+
+.container-menuLateral li {
+    border-bottom: 1px solid #F4F4F4;
+	padding: 7px 15px!important;
+	font-size: 12px!important;
+    text-align: left;
+}
+
+
+
+</style>
+
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript">
+		function show_hide_texto_historico(){
+			var btn = document.getElementById('bt_hide_show');
+			var txt_inicial = document.getElementById('tituloJumbo');
+			var txt_historico = document.getElementsByClassName('historico');
+			var projetos = document.getElementById('projetos');
+
+			console.log( 'função mostrar texto historico: ' + txt_inicial.style.display)
+			console.log( 'função mostrar texto historico: ' + txt_historico[0].style.display)
+
+			console.log( 'função mostrar texto historico: ' + txt_inicial.style.display == 'none')
+			console.log( 'função mostrar texto historico: ' + txt_historico[0].style.display == 'none')
+
+			if (txt_inicial.style.display == 'none'){
+				txt_inicial.style.display = 'block';
+				txt_historico[0].style.display = 'none';
+				txt_historico[1].style.display = 'none';
+				projetos.style.display = 'none';
+
+			} else {
+				txt_inicial.style.display = 'none';
+				txt_historico[0].style.display = 'block';
+				txt_historico[1].style.display = 'block';
+				projetos.style.display = 'none';
+			}
+		}
+
+		function mostraProjetos(){
+			var btn = document.getElementById('bt_mostra_projetos');
+			var txt_inicial = document.getElementById('tituloJumbo');
+			var txt_historico = document.getElementsByClassName('historico');
+			var projetos = document.getElementById('projetos');
+
+			console.log( 'função mostrar projetos: ' + txt_inicial.style.display)
+			console.log( 'função mostrar projetos: ' + txt_historico[0].style.display)
+
+			if (txt_inicial.style.display == 'block' || txt_historico[0].style.display == 'block') {
+				txt_inicial.style.display = 'none';
+				txt_historico[0].style.display = 'none';
+				txt_historico[1].style.display = 'none';
+
+				projetos.style.display = 'block';
+
+			}
+		}
+
+
+
+	</script>
+{% endblock %}
+
+
+{% block content %}
+
+<hr/>
+<div class="row">
+	<div class="container-menuLateral col-sm-3">
+		<div class="sidenav">
+			<a role="button" id="bt_hide_show" onclick="show_hide_texto_historico()" />
+			Gecal - Histórico</a>
+			<a role="button" id="bt_mostra_projetos" onclick="mostraProjetos()" /> Projetos </a>
+
+			<a href="#">Pesquisadores</a>
+			<a href="#">Bolsistas</a>
+			<a href="#">Galerias</a>
+			<a href="localhost:1234/admin" onclick="document.location='localhost:1234/admin:index';" id="anchorAdminId">Anchor</a>
+			<a href="{% url 'admin:index' %}"> Login </a></li>
+			<!-- 					<li><a href=" url 'app_teste:ind_app_teste' ">App_teste</a></li> -->
+			<a href="{% url 'denunciar:indice_denunciar' %}">Denunciar</a>
+		</div>
+	</div>
+
+	<div class="jumbotron col-sm-8" id="tituloJumbo">
+		<p>
+
+		</p>
+
+	</div>
+
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 historico" style="display:none;">
+		<h4>HISTÓRICO</h4>
+		<!--todo colocar variavel que mostra primeira parte do historico-->
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 historico" style="display:none;">
+		<br> <br> O GECAL apresenta um caráter inter e
+		transdisciplinar, proporcionando aos integrantes das linhas de
+		pesquisa a capacidade de gerar conhecimentos de fronteira, com
+		destaque a temas relevantes da atualidade, que permitam associar
+		pesquisador@s com diferentes competências em propostas bem definidas
+		e focadas, e levando em conta as atividades científicas que podem
+		ser geradas como fruto dessa associação: publicações em revistas
+		científicas, livros, formação de novas equipes, de recursos humanos
+		nas próprias instituições envolvidas e geração de conhecimentos
+		fundamentais para políticas públicas no campo da educação.
+	</div>
+
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="display:none;"  id="projetos">
+		<ul class="nav nav-tabs" >
+			<li class="active"><a data-toggle="tab" href="#em_andamento">Projetos
+				Em Andamento</a></li>
+
+			<li><a data-toggle="tab" href="#concluidos">Projetos
+				Concluídos</a></li>
+		</ul>
+
+		<div id="em_andamento" class="tab-pane fade in active" >
+
+
+			<div class="tab-content">
+				<h4>
+					<a href="#proj1Conteudo" data-toggle="collapse"> 1.1.1
+						Gênero, diversidade e sexualidade no campo da educação</a>
+				</h4>
+				<div id="proj1Conteudo" class="collapse">
+					<strong>Ementa:</strong>Os estudos sobre gênero, diversidade e
+					sexualidade têm se revelado uma área de pesquisa profícua no
+					campo das Ciências Humanas. Os conceitos de diversidade e
+					sexualidade analisados juntamente com a construção das
+					identidades, numa perspectiva relacional de gênero tornam-se
+					importantes instrumentos epistemológicos, necessário para se
+					compreender e discutir possíveis transformações na educação.
+					Sabemos que os currículos, procedimentos de ensino, as normas,
+					teorias, a linguagem, os materiais didáticos e processos de
+					avaliação são o lócus da construção das desigualdades de gênero,
+					sexualidade, raça, etnia e classe no contexto escolar. Além
+					disso, objetiva-se discutir não apenas o que é ensinado na
+					escola, mas o modo como é ensinado, problematizando também as
+					teorias que orientam o trabalho do profissional da educação e
+					atentos, sobretudo, para a linguagem, procurando perceber o
+					sexismo, o racismo, o etnocentrismo, a homofobia que ela muitas
+					vezes carrega e institui.
+					<a href=" url app_name:page_name.html "> + info </a>
+				</div>
+			</div>
+			<!-- 					</div> -->
+			<!-- 					<div class="col-md-6"> -->
+			<div class="tab-content">
+				<h4>
+					<a href="#proj2Conteudo" data-toggle="collapse"
+					   default="collapsed"> 1.1.2 Estudos epistemológicos em
+						politica públicas: gênero e educação</a>
+				</h4>
+				<div id="proj2Conteudo" class="collapse">
+					<strong>Ementa:</strong>Esta linha objetiva analisar e discutir
+					as políticas públicas de gênero no campo da educação
+					implementadas em países do continente da América Latina no final
+					do século XX e inicio do século XXI. As políticas públicas para
+					as mulheres ocupam as agendas governamentais na América Latina em
+					contextos de reformas neoliberais e de globalização da economia
+					dos anos 1990. Contextos também demarcados por processos de
+					redemocratização política e pela intensificação dos investimentos
+					feministas na busca pela equidade entre homens e mulheres.
+					Investigaremos a relevância da ação política protagonizada pelas
+					mulheres e/ou para mulheres enquanto possibilidade de intervenção
+					cidadã e de transformação do espaço público brasileiro e Latino
+					Americano. Também, analisaremos políticas de gênero voltadas para
+					áreas específicas, tais como saúde, renda, trabalho e violências.
+					<a href=" url app_name:page_name.html "> + info </a>
+				</div>
+			</div>
+			<!-- 					</div> -->
+			<div class="tab-content">
+				<h4>
+					<a href="#proj3Conteudo" data-toggle="collapse"
+					   default="collapsed"> 1.1.3 Políticas Públicas De Gênero: Uma
+						Análise Dos Currículos De Graduação E Pós-Graduação No Estado De
+						Santa Catarina</a>
+				</h4>
+				<div id="proj3Conteudo" class="collapse">
+					<strong>Ementa:</strong>Esta pesquisa possui como objetivo
+					identificar se as temáticas de gênero e sexualidades estão
+					contempladas nos Programas de Pós-Graduação em Educação e
+					Graduação no Estado de Santa Catarina. É um estudo qualitativo em
+					que será empregado o método de análise documental. Esta pesquisa
+					possui como aporte teórico-metodológico autores/as que escrevem
+					sobre gênero, sexualidades, políticas públicas de gênero,
+					formação de professoras/es, buscando compreender os impactos e as
+					contribuições da inserção dessas temáticas na estrutura
+					curricular na perspectiva da construção de uma educação justa e
+					igualitária para todas/os. Na Conferência Nacional da Educação
+					Básica (CONEB) ocorrida em 2008, foi aprovada a incorporação dos
+					estudos de gênero e diversidade nos currículos das licenciaturas,
+					configurando-se como um passo fundamental para a concretização da
+					inclusão dessas temáticas nas IES. Considerando a existência de
+					políticas públicas de gênero e que a implementação dessas na
+					estrutura curricular dos cursos de licenciatura e pós-graduação
+					pode contribuir no enfrentamento de violências de gênero,
+					preconceitos e discriminação no campo da educação, justifica-se a
+					importância de mapear quais são as IES que oferecem disciplinas
+					sobre estas temática em seus Programas de Pós-Graduação em
+					Educação e em seus Cursos de Licenciatura e identificar o perfil
+					destes cursos. <em>Palavras-chave: Políticas públicas de gênero,
+					Sexualidades, Instituições de Ensino Superior, Currículo.</em>
+					<a href="{% url 'paginasGecal:proj3Conteudo' %}"> + info </a>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="concluidos" class="tab-pane fade">
+			<div class="col-md-6">
+				<div class="tab-content">
+					<h4>
+						<a href="#"> PROJETO INTERINSTITUCIONAL ANTROPOLOGIA,
+							GÊNERO E EDUCAÇÃO EM SANTA CATARINA 2013-2015</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+<hr/>
+
+
+{% endblock %}
+<br> <br> <br>
+<!-- 	</div> -->
+
+<footer>
+	<div class="container-fluid" style="margin-left: 15px">
+		<p>
+			<a
+					href="https://www.facebook.com/Gecal-Grupo-de-Pesquisa-em-G%C3%AAnero-Educa%C3%A7%C3%A3o-e-Cidadania-na-Am%C3%A9rica-Latina-1789206161123983/"
+					target="blank">Facebook</a> | <a href="http://dgp.cnpq.br/dgp/espelhogrupo/0019510862452049" target="blank">CNPq</a>
+		</p>
+	</div>
+</footer>
