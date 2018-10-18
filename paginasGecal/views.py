@@ -1,10 +1,29 @@
+from datetime import datetime
+import pyrebase
 import re
 from django.shortcuts import render, HttpResponse
 from django.views import generic
 from .models import historicoGecal, LinhaDePesquisa, Pesquisador, Bolsista, Formulario_denuncia, Fotos_e_Destaques
 from django.contrib.auth.forms import UserCreationForm
 from .forms import DenunciaForm
+import random
+
 # Create your views here.
+
+
+config = {
+    'apiKey': "AIzaSyDbUzZnb0I6tC3n-1ZS5klUZCRmzIi3seQ",
+    'authDomain': "dropbox-clone-eb95a.firebaseapp.com",
+    'databaseURL': "https://dropbox-clone-eb95a.firebaseio.com",
+    'projectId': "dropbox-clone-eb95a",
+    'storageBucket': "dropbox-clone-eb95a.appspot.com",
+    'messagingSenderId': "71341269427"
+}
+
+firebase = pyrebase.initialize_app(config)
+authe = firebase.auth()
+database = firebase.database()
+
 
 def index(request):
 
@@ -62,6 +81,7 @@ def index(request):
     #     'extensao_concluido':projetos_ext_concluido},)
 
 
+
 def formulario_denuncia(request):
     print('entrou no formulário denuncia view')
 
@@ -110,34 +130,50 @@ BOOLEAN_DICT_TIPO_DE_VIOLENCIA = {
     'check_le': True, 'check_tr': True, 'check_av': True, 'check_ou': True,
 }
 
+
+def gravarNoFirebase(request, denuncia):
+    print('entrou no gravar firebase')
+    randomId = random.randint(0,999999)
+    denuncia['data_relato'] = datetime.today().__str__()
+    print(database.child("denuncias").child(randomId).set(denuncia))
+
 def gravar_denuncia(request):
+
+    dados_denuncia = {}
     denuncia = Formulario_denuncia()
     setattr(denuncia, 'tipo_de_experiencia',request.POST['radio'])
+
+    dados_denuncia['tipo_de_experiencia'] = request.POST['radio']
+
     chaves_post = request.POST.keys()
     # for i in range(len(chaves_post)):
     #     print("imprimindo chaves: " + chaves_post[i])
 
     for chave in chaves_post:
-        print("imprimindo v2 chaves> " + chave)
-        print("imprimindo valores do request.POST['chave']")
-        print("valor da chave: " + chave + " no request.POST : "+ request.POST[chave])
+        # print("imprimindo v2 chaves> " + chave)
+        # print("imprimindo valores do request.POST['chave']")
+        # print("valor da chave: " + chave + " no request.POST : "+ request.POST[chave])
         if (chave != 'csrfmiddlewaretoken'):
             search = re.search("check", chave)
-            print('search')
-            print(search)
+            # print('search')
+            # print(search)
             if (search != None):
                 setattr(denuncia, MAP_DICT_TIPO_DE_VIOLENCIA[chave], BOOLEAN_DICT_TIPO_DE_VIOLENCIA[chave])
+                dados_denuncia[MAP_DICT_TIPO_DE_VIOLENCIA[chave]] = BOOLEAN_DICT_TIPO_DE_VIOLENCIA[chave]
+            elif (chave == 'txt_relato' and request.POST[chave] == 'Insira aqui o relato!'):
+                setattr(denuncia, MAP_DICT_TIPO_DE_VIOLENCIA[chave], '')
+                dados_denuncia[MAP_DICT_TIPO_DE_VIOLENCIA[chave]] = request.POST[chave]
             else:
                 setattr(denuncia, MAP_DICT_TIPO_DE_VIOLENCIA[chave], request.POST[chave])
+                dados_denuncia[MAP_DICT_TIPO_DE_VIOLENCIA[chave]] = request.POST[chave]
 
-    print('chaves_post')
-    print(chaves_post)
+    print('dados_denuncia >>> ' , dados_denuncia)
+    gravarNoFirebase(request,dados_denuncia)
+    # print('chaves_post')
+    # print(chaves_post)
     # print('chaves_post.length')
     # print(len(chaves_post))
     denuncia.save()
-
-def galeria_e_destaques(request):
-    return render(request, 'galeria_e_destaques.html')
 
 
 def form2difer(request):

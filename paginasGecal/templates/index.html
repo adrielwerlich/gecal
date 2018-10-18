@@ -28,24 +28,24 @@
 <script>Vue.config.delimiters = ['${', '}'];</script>
 <script>Vue.config.devtools = true;</script>
 <script>
-    window.onload = function () {
-        var app = new Vue({
-            delimiters: ['[[', ']]'],
-            el: '#app',
-            data: {
-                title: 'Welcome to My Journal'
-            }
-        })
-	console.dir(app)
-
-    var app2 = new Vue({
-        el: '#app-2',
-        data: {
-            message: 'You loaded this page on ' + new Date().toLocaleString()
-        }
-    })
-		console.dir(app2)
-    }
+    // window.onload = function () {
+    //     var app = new Vue({
+    //         delimiters: ['[[', ']]'],
+    //         el: '#app',
+    //         data: {
+    //             title: 'Welcome to My Journal'
+    //         }
+    //     })
+	// console.dir(app)
+	//
+    // var app2 = new Vue({
+    //     el: '#app-2',
+    //     data: {
+    //         message: 'You loaded this page on ' + new Date().toLocaleString()
+    //     }
+    // })
+	// 	console.dir(app2)
+    // }
 // new Vue({el: '#app'})
 // import Vue from 'vue'
 // import App from '..static/js/App'
@@ -92,12 +92,6 @@
 		<img src="{% static 'imagens/logo_observatorio.jpg' %}" />
 	</div>
 
-	<div id="app">
-		[[ title ]]
-	</div>
-
-
-	</div>
 
 	<!-- MOSTRA O JUMBOTRON -->
 	<div class="jumbotron col-sm-4" id="tituloJumbo">

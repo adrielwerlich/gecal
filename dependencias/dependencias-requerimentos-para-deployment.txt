@@ -1,0 +1,17 @@
+dependencias python django
+
+pip install dj-database-url
+
+
+#para servir arquivos estaticos. 
+pip install dj-static
+# depois da instalação importar no wsgi.py
+from dj_static import Cling
+# configurar a applicação para receber Cling
+application = Cling(get_wsgi_application())
+
+
+
+pip install python-decouple
+
+pip freeze > nome_do_arquivo.txt # para criar referencia às dependencias

@@ -9,7 +9,6 @@ app_name = 'paginasGecal'
 urlpatterns = [
     path('', views.index, name='index'),
     path('relato_violencia/', views.formulario_denuncia, name='chama_form_denuncia'),
-    path('galeria_fotos_destaques/', views.galeria_e_destaques, name='galeria_de_fotos'),
 #    path('formulario_denuncia/', views.Denunciar.as_view(), name='formulario_denuncia'),
 #     path('qualquerUrl/', views.form2difer, name='qualquerNome'),
     # path('proj3Conteudo/', views.proj3Andamento, name='proj3Conteudo'),
